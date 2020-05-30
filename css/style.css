@@ -1,0 +1,34 @@
+main{
+    padding: 20px;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    column-gap: 10px;
+    background: rgb(248, 243, 243);
+    font-size: 1.6em;
+}
+
+#content{
+    background:  rgb(214, 188, 200);
+    background:  whitesmoke;
+    padding: 30px;
+}
+
+
+#side-nav{
+    background:rgb(70, 2, 2);
+}
+
+#others{
+    background: rgb(214, 188, 200);
+}
+
+.center-text{
+    text-align: center;
+}
+
+.center-item{
+    margin: 0px auto;
+    display: block;
+}
