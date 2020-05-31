@@ -10,7 +10,8 @@
 header nav{
     margin: 10px;
     position: fixed;
-    width: 95%;
+    width: 100%;
+    background: gray;
     
 }
 #primary-nav{
