@@ -22,7 +22,7 @@ main{
     /* grid-template-columns: 2fr 6fr 2fr;
     column-gap: 10px; */
     background: rgb(248, 243, 243);
-    font-size: 1.6em;
+    font-size: 1em;
 }
 
 #content{
