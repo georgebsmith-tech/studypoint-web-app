@@ -1,10 +1,26 @@
+#primary-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+header{
+    width:100%;
+}
+
+#toggle-nav div{
+width: 30px;
+padding: 5px;
+background: lightblue;
+}
+
+
 main{
     padding: 20px;
-    width: 90%;
+    width: 90vw;
     margin: 0px auto;
-    display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
-    column-gap: 10px;
+    /* display: grid; */
+    /* grid-template-columns: 2fr 6fr 2fr;
+    column-gap: 10px; */
     background: rgb(248, 243, 243);
     font-size: 1.6em;
 }
@@ -17,11 +33,11 @@ main{
 
 
 #side-nav{
-    background:rgb(70, 2, 2);
+    background:lightblue;
 }
 
 #others{
-    background: rgb(214, 188, 200);
+    background: lightblue;
 }
 
 .center-text{
@@ -31,4 +47,9 @@ main{
 .center-item{
     margin: 0px auto;
     display: block;
+}
+
+
+.hide{
+    display: none;
 }
