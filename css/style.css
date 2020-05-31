@@ -9,6 +9,8 @@
 
 header nav{
     margin: 10px;
+    position: fixed;
+    width: 95%;
     
 }
 #primary-nav{
