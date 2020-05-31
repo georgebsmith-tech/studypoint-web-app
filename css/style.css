@@ -2,27 +2,77 @@
     margin: 0;
     padding: 0;
 }
+
+ul{
+    list-style-type: none;
+}
 /* iframe{
     display: block;
     width: 90vw;
 } */
 
+
+/* header */
+h1>a{
+    text-decoration: none;
+    padding: 30px 10px 10px 10px;
+    font-style: italic;
+}
+
+h1>a>span:first-child{
+    color: red;
+}
+
+h1>a>span:nth-child(2){
+    color: black;
+}
+h1>a>span:last-child{
+    color: chartreuse;
+}
+#landing-image{
+    background: rgba(0, 0, 0,0.6);
+}
+
+#landing-image img{
+    position: relative;
+    width: 99vw;
+}
+
+#landing-banner{
+    margin-top: 400px;
+    height: 94vh;
+}
+#landing-content{
+    color: white;
+    width: 99vw;
+
+}
+
 header nav{
-    margin: 10px;
     position: fixed;
-    width: 100%;
-    background: gray;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    
     
 }
-#primary-nav{
+#primary-nav-mobile{
     display: flex;
     justify-content: space-between;
+    background: white;
     
 }
 #toggle-nav{
+    margin: 5px;
     background: rgb(68, 71, 55);
     padding: 5px;
     border-radius: 20px 20px 200px 20px;
+    outline:none;
+}
+
+#toggle-nav:hover{
+    cursor: pointer;
 }
 
 #toggle-nav div{
@@ -41,15 +91,58 @@ header nav{
     width: 10px;  
 }
 
+#phone{
+    background: greenyellow;
+}
+#phone i{
+    background: white;
+    border-radius: 100%;
+    width:20px;
+    height: 20px;
+    text-align: center;
+}
+
+.nav-close{
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+/* nav-controller */
+.nav-open{
+    transform: translateX(0%);
+    transition: 0.7s;
+}
+
+#main-nav{
+    background: rgba(0, 0, 0,0.3);
+    width:fit-content;
+    
+    border-radius: 0px 6px 5px 0px;
+    height: 100vh;
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+#main-nav>li{
+    padding: 2.5px 10px;
+}
+
+#main-nav>li:hover{
+    background: rgb(172, 233, 49);
+
+}
+
 
 main{
     padding: 20px;
     /* width: 96vw; */
-    margin: 0px auto;
+    margin: 30px auto;
     /* display: grid; */
     /* grid-template-columns: 2fr 6fr 2fr;
     column-gap: 10px; */
-    background: rgb(248, 243, 243);
+    background: rgb(203, 241, 126);
     font-size: 1em;
 }
 
@@ -82,4 +175,17 @@ main{
 
 .hide{
     display: none;
+}
+
+footer{
+    text-align: center;
+}
+
+.fixed-right{
+    position:fixed;
+    right:-74px;
+    top:100px;
+    background:white;
+    padding: 0px 100px 10px 0px;
+    transform: rotate(-90deg);
 }
